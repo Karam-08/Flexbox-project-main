@@ -1,0 +1,72 @@
+.flex-container{
+    display: flex; /* Gives basic flex layout*/
+    flex-direction: row; /* Specifies how flex items are placed in the flex container */
+    align-items: start;
+    align-content: start;
+    justify-content: center; /* Aligns items */
+    flex-wrap: wrap; /* When browser is small, lets elements wrap onto multiple lines */
+    background-color: gold;
+    color: gold; /* Gold is cool so that's why I picked it */
+    height: auto; /* Automatically gives height everytime adjustment is made (Too much work to determine the right amount of height) */
+    background-size: 100%; /* Makes background cover the whole screen no matter what size browser is */
+    
+}
+.site-title{
+    font-size: xx-large; /* Do I have to explain? It makes the font size larger. */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; /* Cool font */
+    color: gold;
+    width: 100%; /* Site title takes up 100% of screen vertically */
+    height: 1; /* Required for Falcon image to show */
+    border: 5px solid gray; /* Puts border around blueviolet*/
+}
+.navbar{
+border: 5px solid gray;
+padding: 10px; 
+padding-left: 30px; /* Spacing purposes */
+width: 100%;
+}
+.flex-container > div{
+    background-color: blueviolet; /* Puts nice purple background color for every div */
+    margin: 10px;
+    padding: 15px; /* Spacing purposes */
+}
+.navbar > a{
+    margin-left: 200px;
+    margin-right: 50px; /* Spreads out the text */
+text-decoration: none; /* Gets rid of underline */
+color: gold;
+}
+
+.main-content{
+    border: 5px solid gray;
+    width: 60%; /* Takes up portion to leave space for sidebar */
+}
+
+.main-content > p{
+    font-size: 22px; /* Adjusts font size */
+}
+
+.sidebar{
+    border: 5px solid gray;
+    width: 30%; /* Sidebar should not take much space. Puts it at the side */
+}
+
+.footer{
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    align-content: space-evenly;
+    justify-content: space-evenly; 
+    align-items: flex-start;
+    border: 5px solid gray;
+    padding: 10px;
+    padding-left: 30px;
+    width: 100%; /* All of these are for text placement (except for border) */
+}
+
+
+.footer > a{
+    margin-top: 15px; /* Text adjustment */
+    text-decoration: underline;
+    color: gold;
+}
